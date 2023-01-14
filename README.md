@@ -64,4 +64,4 @@ You should now have the bot running in a Docker container, ready to respond to c
 
 # TO DO
 
-[] Add Github Action to update the docker image automatically
+[ ] Add Github Action to update the docker image automatically
