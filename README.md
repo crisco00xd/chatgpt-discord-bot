@@ -13,7 +13,7 @@ Currently, there are two commands:
 
 - `!smart <prompt>` - generates a response to the given prompt
 - `!temp <value>` - changes the temperature of the responses (affects the creativity of the responses)
-> Max Temperature Value = 2.0
+> Max Temperature Value = 2.0, 
 > Min Temperature Value = 0.1
 
 ### How to run using python
