@@ -13,4 +13,4 @@ RUN git clone https://github.com/crisco00xd/chatgpt-discord-bot.git .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Start the bot
-CMD ["python", "smart_bot.py"]
+ENTRYPOINT ["python", "smart_bot.py"]
