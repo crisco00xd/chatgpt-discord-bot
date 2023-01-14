@@ -60,3 +60,8 @@ You should now have the bot running in a Docker container, ready to respond to c
 
 # Note
 ## This bot requires OpenAI API Key and Discord API key, please make sure to have both keys before running the bot.
+
+
+# TO DO
+
+[] Add Github Action to update the docker image automatically
