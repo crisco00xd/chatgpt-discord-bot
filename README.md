@@ -55,7 +55,8 @@ This command will start the bot in detached mode, you can check the logs by runn
 
 You should now have the bot running in a Docker container, ready to respond to commands on your Discord server.
 
-
+## Setup Tutorial and Information
+### https://crisco00xd.medium.com/chatgpt-discord-bot-7b297944ba55
 
 
 # Note
