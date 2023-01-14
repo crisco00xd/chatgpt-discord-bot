@@ -1,0 +1,8 @@
+version: '3'
+services:
+  bot:
+    image: crisco00xd/discord-bot:latest
+    environment:
+      - OPENAI_API_KEY=YOUR_API_KEY
+      - DISCORD_API_KEY=YOUR_API_KEY
+    command: python smart_bot.py     
