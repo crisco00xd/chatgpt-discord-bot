@@ -3,7 +3,7 @@ import discord
 import os
 from discord.ext import commands
 
-openai.api_key = os.getenv('OPENAI_API_KEY')
+openai.api_key = 'OPEN_AI_API_KEY'
 
 # Add intents parameter to the commands.Bot constructor
 intents = discord.Intents.all()
@@ -58,4 +58,4 @@ async def temp(ctx, *, value):
         temperature = tempo #Safety Switch
         await ctx.send("Please Input A Number (Min = 0.1 : Max = 2.0")
 
-bot.run(os.getenv('DISCORD_API_KEY'))
+bot.run('DISCORD_BOT_API_KEY')
