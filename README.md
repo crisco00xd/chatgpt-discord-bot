@@ -1,10 +1,10 @@
-#🤖 Discord Smart Bot
-##A Discord bot that uses the OpenAI API to generate human-like responses to prompts.
+# 🤖 Discord Smart Bot
+## A Discord bot that uses the OpenAI API to generate human-like responses to prompts.
 
 # Features
 - Generate responses to prompts using the OpenAI API
 - Change the temperature of the responses (affects the creativity of the responses)
-- Split long responses into chunks to avoid message length limits
+- Split long responses into chunks to avoid discord's message length limits
 
 ## How it works
 The bot listens for commands starting with the ! prefix and responds accordingly.
