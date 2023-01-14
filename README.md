@@ -13,29 +13,32 @@ Currently, there are two commands:
 
 - `!smart <prompt>` - generates a response to the given prompt
 - `!temp <value>` - changes the temperature of the responses (affects the creativity of the responses)
+> Max Temperature Value = 2.0
+> Min Temperature Value = 0.1
 
 ### How to run using python
 
-Clone the repository
+1. Clone the repository
 ```git clone https://github.com/crisco00xd/chatgpt-discord-bot.git```
 
-Install the dependencies
+2. Install the dependencies
 ```pip install -r requirements.txt```
 
-Set your OpenAI API key and Discord API key in the smart_bot.py file
+3. Set your OpenAI API key and Discord API key in the smart_bot.py file
 
-Run the bot
+4. Run the bot
 ```python smart_bot.py```
 
 ### How to host on a docker container
 
-Build the image
+1. Build the image
 ```docker build -t <image-name> . ```
 
-Run the container
+2. Run the container
 ```docker run -d --env OPENAI_API_KEY=<your_api_key> --env DISCORD_API_KEY=<your_discord_api_key> <image-name>```
 
 Make sure to replace <your_api_key> and <your_discord_api_key> with your actual OpenAI and Discord API keys.
 
 # Note
 ## This bot requires OpenAI API Key and Discord API key, please make sure to have both keys before running the bot.
+## Docker Compose Comming Soon!
