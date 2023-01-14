@@ -1,6 +1,5 @@
 import openai
 import discord
-import re
 import os
 from discord.ext import commands
 
@@ -51,9 +50,12 @@ async def temp(ctx, *, value):
     tempo = temperature
     try:
         temperature = float(value)
-        await ctx.send(f"Temperature Changed To {temperature}")
+        if temperature < 0.1 or temperature > 2.0:
+            await ctx.send(f"Max Value: 2.0 \n Min Value: 0.1")
+        else:
+            await ctx.send(f"Temperature Changed To {temperature}")
     except ValueError:
         temperature = tempo #Safety Switch
-        await ctx.send("Don't be a bitch and input a number you dumb shit...")
+        await ctx.send("Please Input A Number (Min = 0.1 : Max = 2.0")
 
 bot.run(os.getenv('DISCORD_API_KEY'))
