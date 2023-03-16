@@ -1,10 +1,11 @@
 import openai
 import discord
+import os
 from discord.ext import commands
 import traceback
 import asyncio
 
-openai.api_key = 'YOUR_OPENAI_API_KEY'
+openai.api_key = os.environ['OPENAI_API_KEY']
 
 
 # Global Variables
@@ -93,4 +94,4 @@ async def temp(ctx, *, value):
 
 bot.add_listener(on_ready, 'on_ready')
 bot.add_listener(on_command_error, 'on_command_error')
-bot.run('YOUR_DISCORD_API_KEY')
+bot.run(os.environ['DISCORD_API_KEY'])
